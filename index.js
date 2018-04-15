@@ -19,28 +19,40 @@ const sleep = (wait) => {
 }
 
 const readAll = async() => {
-  process.stdout.write(`start\n`);
-  const wait = 1000;
+  try {
+    process.stdout.write(`start\n`);
+    const wait = 1000;
 
-  const data1 = await readText('sample-1.txt');
-  process.stdout.write(data1);
-  process.stdout.write(`\n`);
+    const data1 = await readText('sample-1.txt');
+    process.stdout.write(data1);
+    process.stdout.write(`\n`);
 
-  await sleep(wait);
+    await sleep(wait);
 
-  const data2 = await readText('sample-2.txt');
-  process.stdout.write(data2);
-  process.stdout.write(`\n`);
+    const data2 = await readText('sample-2.txt');
+    process.stdout.write(data2);
+    process.stdout.write(`\n`);
 
-  await sleep(wait);
+    await sleep(wait);
 
-  const data3 = await readText('sample-3.txt');
-  process.stdout.write(data3);
-  process.stdout.write(`\n`);
+    // const dataX = await readText('sample-x.txt');
+    // process.stdout.write(dataX);
+    // process.stdout.write(`\n`);
+    //
+    // await sleep(wait);
 
-  await sleep(wait);
+    const data3 = await readText('sample-3.txt');
+    process.stdout.write(data3);
+    process.stdout.write(`\n`);
 
-  process.stdout.write(`finish\n`);
+    await sleep(wait);
+
+    process.stdout.write(`finish\n`);
+
+  } catch (e) {
+    console.error(e);
+  }
+
 }
 
 readAll();
