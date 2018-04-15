@@ -1,0 +1,19 @@
+{
+  "name": "async-test",
+  "version": "1.0.0",
+  "description": "sample code of async/await for Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TKquality/node-async-test.git"
+  },
+  "author": "TKquality",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TKquality/node-async-test/issues"
+  },
+  "homepage": "https://github.com/TKquality/node-async-test#readme"
+}
